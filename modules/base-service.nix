@@ -31,7 +31,6 @@ let
 in
 {
   imports = [
-    cardano-ops.modules.common
     cardano-ops.modules.custom-metrics
     (sourcePaths.cardano-node + "/nix/nixos")
   ];

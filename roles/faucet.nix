@@ -9,7 +9,6 @@ let
 in {
 
   imports = [
-    cardano-ops.modules.common
     cardano-ops.modules.custom-metrics
 
     # Cardano faucet needs to pair a compatible version of wallet with node

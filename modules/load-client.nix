@@ -8,7 +8,6 @@ let
 in
 {
   imports = [
-    cardano-ops.modules.common
     (sourcePaths.cardano-node + "/nix/nixos")
   ];
 

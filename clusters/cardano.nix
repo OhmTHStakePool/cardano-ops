@@ -265,7 +265,10 @@ let
         deployment.targetEnv = targetEnv;
         nixpkgs.pkgs = pkgs;
       } (args // {
-        imports = args.imports ++ (def.imports or []);
+        imports =
+          [ cardano-ops.modules.common ]
+          ++ args.imports
+          ++ (def.imports or []);
       }))
       (builtins.removeAttrs def [
         "imports"

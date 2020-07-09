@@ -34,10 +34,6 @@ let
   staticRouteIp = getStaticRouteIp resources nodes;
 in {
 
-  imports = [
-    cardano-ops.modules.common
-  ];
-
   options = {
     services.cardano-node-legacy = {
       listenIp = mkOption { type = types.str; default = getListenIp nodes.${name};};
