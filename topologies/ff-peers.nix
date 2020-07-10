@@ -1206,4 +1206,9 @@
     addr = "relay.cardanians.io";
     port = 3001;
   }
+  {
+    operator = "THStakePool";
+    addr = "relay-ada.thstakepool.com";
+    port = 3001;
+  }
 ]
